@@ -7,17 +7,20 @@ public class Program {
         Transport motorcycle = new Motorcycle();
         Transport cargo = new Cargo();
 
-        System.out.println(car);
-        car.move();
-        car.stop();
-        System.out.println(bicycle);
-        bicycle.move();
-        bicycle.stop();
-        System.out.println(motorcycle);
-        motorcycle.move();
-        motorcycle.stop();
-        System.out.println(cargo);
-        cargo.move();
-        cargo.stop();
+        demo(car);
+        demo(bicycle);
+        demo(motorcycle);
+        demo(cargo);
+        
+        
+
+       
+    }
+
+    public static void demo(Object o) {
+        System.out.println(o);
+        ((Transport) o).move();
+        ((Transport) o).stop();
+         
     }
 }
