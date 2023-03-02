@@ -1,5 +1,8 @@
 package Lesson_07.Ex003;
 
+import javax.swing.text.DocumentFilter;
+
+import org.w3c.dom.stylesheets.DocumentStyle;
 
 /** 
  * Это точка 2D

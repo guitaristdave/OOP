@@ -15,5 +15,8 @@ public class Program {
 
         var dis = Point2D.distance(a, b);
         System.out.println(dis);
+
+        
     }
 }
+
