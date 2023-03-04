@@ -11,16 +11,14 @@ public class Program {
         demo(bicycle);
         demo(motorcycle);
         demo(cargo);
-        
-        
 
-       
     }
 
     public static void demo(Object o) {
         System.out.println(o);
         ((Transport) o).move();
         ((Transport) o).stop();
-         
+        System.out.println("------------");
+
     }
 }
