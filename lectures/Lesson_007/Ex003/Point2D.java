@@ -1,4 +1,4 @@
-package Lesson_07.Ex003;
+package lectures.Lesson_007.Ex003;
 
 import javax.swing.text.DocumentFilter;
 

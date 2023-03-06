@@ -14,10 +14,10 @@ public class Program {
 
     }
 
-    public static void demo(Object o) {
+    public static void demo(Transport o) {
         System.out.println(o);
-        ((Transport) o).move();
-        ((Transport) o).stop();
+        o.move();
+        o.stop();
         System.out.println("------------");
 
     }
