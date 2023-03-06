@@ -1,21 +1,23 @@
 package practice.lesson2;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Program {
     public static void main(String[] args) {
-        Figure circle = new Circle(-12);
-        // Figure square = new Square(15);
-        // Figure rectangle = new Rectangle(11, 12);
-        // Figure triangle = new Triangle(10, 10, 10);
-        demo(circle);
-        // demo(square);
-        // demo(rectangle);
-        // demo(triangle);
+        List<Figure> figures = new ArrayList<>();
+        figures.add(new Circle(10));
+        figures.add(new Rectangle(10, 12));
+        figures.add(new Triangle(10,10 ,10));
+        figures.add(new Square(10));
+        for (Figure figure : figures) {
+            demo(figure);
+        }
         
     }
 
     static void demo (Figure obj) {
-        System.out.println(obj.getClass().getSimpleName());
-        System.out.printf("S: %.2f\n", obj.getArea());
-        System.out.printf("P: %.2f\n", obj.getPerimeter());
+        System.out.println(obj);
+        System.out.println("--------");
     }
 }

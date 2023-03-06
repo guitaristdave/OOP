@@ -1,6 +1,6 @@
 package practice.lesson2;
 
-public class Triangle extends Figure{
+public class Triangle extends Figure implements Perimeter{
     private double sideA;
     private double sideB;
     private double sideC;
@@ -20,6 +20,12 @@ public class Triangle extends Figure{
     public double getArea() {
         double p = this.getPerimeter() / 2;
         return Math.sqrt((p * (p - this.sideA) * (p - this.sideB) * (p - this.sideC)));
+    }
+
+    @Override
+    public String toString() {
+        String result = String.format("%s\nP: %.2f", super.getInfo(this), this.getPerimeter());
+        return result;
     }
 }
 

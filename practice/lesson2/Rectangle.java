@@ -1,8 +1,8 @@
 package practice.lesson2;
 
-public class Rectangle extends Figure{
-    double sideA;
-    double sideB;
+public class Rectangle extends Figure implements Perimeter {
+    private double sideA;
+    private double sideB;
 
     public Rectangle(double sideA, double sideB) {
         this.sideA = sideA;
@@ -28,7 +28,9 @@ public class Rectangle extends Figure{
     }
 
     @Override
-    public boolean isCorrect() {
-        return false;
+    public String toString() {
+        String result = String.format("%s\nP: %.2f", super.getInfo(this), this.getPerimeter());
+        return result;
     }
+
 }
