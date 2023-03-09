@@ -62,8 +62,12 @@ public class Menu {
                     menu(storage);
                     break;
             }
-            if (choice == 7)
+            if (choice == 7) {
+                in.close();
                 break;
+            }
+
         }
+
     }
 }
