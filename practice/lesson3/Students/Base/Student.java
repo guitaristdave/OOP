@@ -1,6 +1,6 @@
 package practice.lesson3.Students.Base;
 
-public abstract class Student {
+public abstract class Student implements Comparable<Student>{
     private String name;
     private String lastname;
     private int grade;
@@ -34,4 +34,12 @@ public abstract class Student {
     public void setGrade(int grade) {
         this.grade = grade;
     }
+
+    @Override
+    public int compareTo(Student o) {
+        if (this.grade > o.grade) return 1;
+        else if (this.grade < o.grade) return -1;
+        else return 0;
+    }
+    
 }

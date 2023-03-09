@@ -1,6 +1,9 @@
 package practice.lesson3;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 import practice.lesson3.Interfaces.AfterSchool;
@@ -15,14 +18,17 @@ import practice.lesson3.Students.Base.Student;
 public class Program {
     public static void main(String[] args) {
         List<Student> students = new ArrayList<>();
-        students.add(new PrimaryStudent());
         students.add(new SecondaryStudent());
+        students.add(new PrimaryStudent());
         students.add(new SeniorStudent());
+
+        Collections.sort(students);
 
         for (Student student : students) {
             demo(student);
             System.out.println("-----");
         }
+
     }
 
     public static void demo(Student obj) {
