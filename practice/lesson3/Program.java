@@ -1,9 +1,7 @@
 package practice.lesson3;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
-import java.util.Comparator;
 import java.util.List;
 
 import practice.lesson3.Interfaces.AfterSchool;
@@ -28,7 +26,6 @@ public class Program {
             demo(student);
             System.out.println("-----");
         }
-
     }
 
     public static void demo(Student obj) {
