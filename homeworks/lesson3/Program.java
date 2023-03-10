@@ -1,7 +1,5 @@
 package homeworks.lesson3;
 
-import java.util.Collections;
-import java.util.List;
 
 import homeworks.lesson3.Exceptions.IncorrectTriangleException;
 import homeworks.lesson3.Exceptions.NegativeValueException;
