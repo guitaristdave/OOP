@@ -18,10 +18,10 @@ public class Program {
         FigArray storage = new FigArray();
 
         // Создание фигур
-        Figure square = new Square("5");
-        Figure rectangle = new Rectangle("5", "4");
-        Figure triangle = new Triangle("2", "3", "4");
-        Figure circle = new Circle("7");
+        Figure square = new Square(5);
+        Figure rectangle = new Rectangle(5, 7);
+        Figure triangle = new Triangle(3, 4, 5);
+        Figure circle = new Circle(7);
         Figure sq = new Square();
 
         // Добавление фигур в список

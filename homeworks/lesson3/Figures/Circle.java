@@ -5,41 +5,30 @@ import homeworks.lesson3.Figures.Base.Figure;
 import homeworks.lesson3.Figures.Base.Lengthable;
 
 public class Circle extends Figure implements Lengthable {
-    private String radius;
+    private int radius;
 
-    public Circle(String radius) throws NegativeValueException {
-        if (!isNumeric(radius)) throw new NumberFormatException("Radius must ne numeric");
-        if (Double.parseDouble(radius) <= 0) throw new NegativeValueException("Radius must be more than zero");
+    public Circle(int radius) throws NegativeValueException {
+        if (radius <= 0) throw new NegativeValueException("Radius must be more than zero");
         this.radius = radius;
     }
 
     public Circle() throws NegativeValueException{
-        this.radius = "7";
+        this.radius = 7;
     }
 
     @Override
     public double length() {
-        return 2 * Math.PI * Double.parseDouble(radius);
+        return 2 * Math.PI * this.radius;
     }
 
     @Override
     public double area() {
-        return Math.PI * Math.pow(Double.parseDouble(radius), 2);
+        return Math.PI * Math.pow(this.radius, 2);
     }
 
     @Override
     public String toString() {
-        return String.format("Круг\nРадиус: %s", this.radius);
+        return String.format("Круг\nРадиус: %d", this.radius);
     }
 
-    private boolean isNumeric(String radius) {
-        boolean result = true;
-        try {
-            Double.parseDouble(radius);
-        } catch (NumberFormatException e) {
-            return false;
-        }
-
-        return result;
-    }
 }
