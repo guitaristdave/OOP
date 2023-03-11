@@ -8,10 +8,10 @@ import homeworks.lesson3.Figures.Base.Figure;
 import homeworks.lesson3.Figures.Base.Lengthable;
 import homeworks.lesson3.Figures.Base.Perimetrable;
 
-public class FigArray {
-    private List<Figure> storage = new ArrayList<Figure>();
+public class FigArray<T extends Figure> {
+    private List<T> storage = new ArrayList<T>();
 
-    public void add(Figure obj) {
+    public void add(T obj) {
         this.storage.add(obj);
     }
 
@@ -20,7 +20,7 @@ public class FigArray {
     }
 
     public void showFigures() {
-        for (Figure figure : storage) {
+        for (T figure : storage) {
             System.out.println(figure);
             System.out.println("------");
         }

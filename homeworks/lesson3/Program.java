@@ -15,7 +15,7 @@ public class Program {
             throws NegativeValueException, IncorrectTriangleException, NumberFormatException {
 
         // Инициализация класса, хранящего фигуры в списке
-        FigArray storage = new FigArray();
+        FigArray<Figure> storage = new FigArray<>();
 
         // Создание фигур
         Figure square = new Square(5);
