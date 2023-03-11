@@ -28,6 +28,7 @@ public class FigArray {
 
     public void showAll() {
         for (Figure figure : storage) {
+
             System.out.println(figure);
             System.out.printf("Площадь: %.2f\n", figure.area());
             if (figure instanceof Lengthable) {
