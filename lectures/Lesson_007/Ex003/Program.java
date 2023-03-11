@@ -1,4 +1,4 @@
-package lectures.Lesson_007.Ex003;
+package Lesson_007.Ex003;
 
 public class Program {
 

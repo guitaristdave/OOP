@@ -1,16 +1,10 @@
 package Lesson_09.Ex005;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
-import java.util.Random;
 
 public class Program {
     public static void main(String[] args) {
 
-        Random r = new Random();
+        // Random r = new Random();
 
         // #region Collections.sort(numbers);
         // List<Integer> numbers = new ArrayList<>();
@@ -54,8 +48,8 @@ public class Program {
 
         //#region
 
-        Worker w1 = new Worker("Имя", "Фамилия", 20, 20);
-        Worker w2 = new Worker("Имя", "Фамилия", 20, 20);
+        // Worker w1 = new Worker("Имя", "Фамилия", 20, 20);
+        // Worker w2 = new Worker("Имя", "Фамилия", 20, 20);
         
 
         //#endregion

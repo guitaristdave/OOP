@@ -1,11 +1,6 @@
 package Lesson_09.Ex002;
 
-import java.beans.Beans;
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
 
-import Lesson_09.Ex002.ExBeverage.*;
 
 public class Program {
     public static void main(String[] args) {

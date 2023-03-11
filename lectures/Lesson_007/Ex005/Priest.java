@@ -1,4 +1,4 @@
-package lectures.Lesson_007.Ex005;
+package Lesson_007.Ex005;
 
 
 import java.util.Random;
@@ -13,7 +13,6 @@ public class Priest {
     private int maxHp;
 
     private int elixir;
-    private int maxElixir;
 
     static {
         Priest.number = 0;
@@ -25,7 +24,6 @@ public class Priest {
         this.hp = hp;
         this.maxHp = hp;
         this.elixir = elixir;
-        this.maxElixir = elixir;
     }
 
     public Priest() {

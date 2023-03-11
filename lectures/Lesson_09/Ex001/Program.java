@@ -1,8 +1,6 @@
 package Lesson_09.Ex001;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
+
 
 public class Program {
     public static void main(String[] args) {
@@ -19,8 +17,8 @@ public class Program {
         //     System.out.println(iter.next());
         // }
 
-        Worker worker = new Worker(
-            "Имя", "Фамилия", 23, 4567);
+        // Worker worker = new Worker(
+        //     "Имя", "Фамилия", 23, 4567);
 
         //Iterator<Object> components = worker.iterator();
 

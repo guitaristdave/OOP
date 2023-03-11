@@ -1,4 +1,4 @@
-package lectures.Lesson_007.Ex005;
+package Lesson_007.Ex005;
 
 import java.util.Random;
 
@@ -11,7 +11,6 @@ public class Magician {
     private int maxHp;
 
     private int mana;
-    private int maxMana;
 
     static {
         Magician.number = 0;
@@ -23,7 +22,6 @@ public class Magician {
         this.hp = hp;
         this.maxHp = hp;
         this.mana = mana;
-        this.maxMana = mana;
     }
 
     public Magician() {
