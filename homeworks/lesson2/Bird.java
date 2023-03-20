@@ -1,4 +1,4 @@
-public abstract class Bird extends Animal{
+public abstract class Bird extends Animal {
     private int flyingHeight;
 
     public Bird(int height, int weight, String eyeColor, String voice, int flyingHeight) {
@@ -16,6 +16,10 @@ public abstract class Bird extends Animal{
 
     @Override
     public String toString() {
-        return String.format("%s\n%s\nВысота полета: %d м\n", this.getClass().getSimpleName(), super.toString(), this.flyingHeight);
+        return String.format("%s\n%s\nВысота полета: %d м\n", this.getClass().getSimpleName(), super.toString(),
+                this.flyingHeight);
     }
 }
+
+
+

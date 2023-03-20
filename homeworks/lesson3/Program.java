@@ -1,6 +1,5 @@
 package homeworks.lesson3;
 
-
 import homeworks.lesson3.Exceptions.IncorrectTriangleException;
 import homeworks.lesson3.Exceptions.NegativeValueException;
 import homeworks.lesson3.Figures.Circle;
@@ -38,10 +37,13 @@ public class Program {
         storage.sort();
 
         // Показать все фигуры и их параметры(длины)
-        storage.showFigures();
+        // storage.showFigures();
 
         // Показать всю информацию о фигурах, включая площадь, периметр/длину
         storage.showAll();
+        System.out.println(Figure) circle > (Figure) square);
+
+        
 
     }
 

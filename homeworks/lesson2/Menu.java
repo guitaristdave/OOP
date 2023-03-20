@@ -6,9 +6,10 @@ public class Menu {
             System.out.println(
                     "МЕНЮ\n1. Добавить новое животное\n2. Убрать животное\n3. Напечатать информацию о животном\n4. Напечатать инофрмацию о всех животных\n5. Заставить животное издать звук\n6. Заставить всех животных издать звук\n7. Выход");
             System.out.println("Введите нужный пункт меню:");
-            try (Scanner in = new Scanner(System.in)) {
+            
+                Scanner in = new Scanner(System.in); 
                 int choice = in.nextInt();
-                switch (choice) {
+                switch (choice) { 
                     case 1:
                         System.out.println(
                                 "Выберите нужный пункт:\n1. Кошка\n2. Собака\n3. Волк\n4. Тигр\n5. Курица\n6. Аист\n7. Назад");
@@ -71,4 +72,4 @@ public class Menu {
         }
 
     }
-}
+

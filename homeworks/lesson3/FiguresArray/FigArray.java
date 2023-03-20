@@ -11,6 +11,7 @@ import homeworks.lesson3.Figures.Base.Perimetrable;
 public class FigArray<T extends Figure> {
     private List<T> storage = new ArrayList<T>();
 
+
     public void add(T obj) {
         this.storage.add(obj);
     }
@@ -24,6 +25,10 @@ public class FigArray<T extends Figure> {
             System.out.println(figure);
             System.out.println("------");
         }
+    }
+
+    public T getFigure(int index) {
+        return this.storage.get(index);
     }
 
     public void showAll() {
@@ -46,4 +51,5 @@ public class FigArray<T extends Figure> {
         Collections.sort(this.storage);
     }
 
+    
 }
