@@ -41,9 +41,6 @@ public class Program {
 
         // Показать всю информацию о фигурах, включая площадь, периметр/длину
         storage.showAll();
-        System.out.println(Figure) circle > (Figure) square);
-
-        
 
     }
 
